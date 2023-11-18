@@ -1,7 +1,7 @@
 const catchAsyncErrors = require("../middleware/catchAsync");
 const { instance } = require("../razorpayInstance");
 const crypto = require("crypto");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
 
 
 exports.checkOut = async (req, res) => {
@@ -33,7 +33,7 @@ exports.paymentVerification = async (req, res) => {
 const isAuthentic = expectedSignature === razorpay_signature
 if(isAuthentic){
 
-res.redirect(`${process.env.FRONT_END}/paymentsuccess?reference=${razorpay_payment_id}`)
+res.redirect(`https://animeuchicha.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`)
 }else{
   res.status(400).json({
     success: false,
