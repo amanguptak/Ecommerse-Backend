@@ -9,10 +9,14 @@ const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-app.use(cors({
-    origin:"https://animeuchicha.vercel.app",
-    credentials:true,
-}))
+const corsOptions = {
+    origin: 'https://animeuchicha.vercel.app',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  };
+
+app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
 app.use(bodyParser.json())
