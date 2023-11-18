@@ -64,7 +64,7 @@ userSchema.pre('save', async function(next)
 userSchema.methods.getJWToken = function(){
 
     return jwt.sign({id: this._id},process.env.JWT_SECRET_KEY,{
-        expiresIn: process.env.JWT_EXPIRE
+        expiresIn: "4d"
     })
 
 }
