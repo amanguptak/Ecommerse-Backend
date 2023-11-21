@@ -17,7 +17,7 @@ const corsOptions = {
     optionsSuccessStatus: 204,
   };
  
-  
+//   http://localhost:8000
 app.use(cors(corsOptions))
 // app.use(cors())
 // app.use((req, res, next) => {
