@@ -2,6 +2,7 @@ const catchAsyncErrors = require("../middleware/catchAsync");
 const { instance } = require("../razorpayInstance");
 const crypto = require("crypto");
 
+//razorpay payment getway
 
 
 exports.checkOut = async (req, res) => {
