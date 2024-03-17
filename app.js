@@ -17,7 +17,7 @@ const corsOptions = {
     optionsSuccessStatus: 204,
   };
  
-//   ecommerse-backend-production.up.railway.app
+//   https://ecommerse-backend-production.up.railway.app
 app.use(cors(corsOptions))
 // app.use(cors())
 // app.use((req, res, next) => {
