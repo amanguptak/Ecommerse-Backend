@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema({
     shippingInfo:{
         address:{
             type:String,
-            required:true,
+            // required:true,
         },
         locality:{
             type:String
@@ -16,15 +16,15 @@ const orderSchema = new mongoose.Schema({
         },
         state:{
             type:String,
-            required:true,
+            // required:true,
         },
         country:{
             type:String,
-            required:true,
+            // required:true,
         },
         pinCode:{
             type:Number,
-            required:true,
+            // required:true,
         },
         phoneNo:{
             type:Number,
