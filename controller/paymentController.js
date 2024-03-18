@@ -34,7 +34,7 @@ exports.paymentVerification = async (req, res) => {
 const isAuthentic = expectedSignature === razorpay_signature
 if(isAuthentic){
 
-res.redirect(`https://animeuchicha.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`)
+res.redirect(`https://anime-clothing-frontend.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`)
 }else{
   res.status(400).json({
     success: false,
