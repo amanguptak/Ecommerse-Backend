@@ -10,7 +10,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 
 const corsOptions = {
-    origin: ['https://anime-clothing-frontend.vercel.app','http://localhost:3001','https://api.razorpay.com'],
+    origin: ['https://anime-clothing-frontend.vercel.app','https://animeuchicha.vercel.app','http://localhost:3001','https://api.razorpay.com'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     allowedHeaders : ['Content-Type', 'Authorization'],
